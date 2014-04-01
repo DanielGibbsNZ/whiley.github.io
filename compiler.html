@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset='utf-8' />
+    <meta http-equiv="X-UA-Compatible" content="chrome=1" />
+    <meta name="description" content="Whiley Developer Website" />
+    <link rel="stylesheet" type="text/css" media="screen" href="stylesheets/stylesheet.css">
+    <title>Whiley Developer Website</title>
+  </head>
+  <body>
+    <div id="header_wrap" class="outer">
+      <header class="inner">
+        <a id="forkme_banner" href="https://github.com/whiley">View on GitHub</a>
+        <h1 id="project_title">Whiley Developer Website</h1>
+        <h2 id="project_tagline">Development of the Whiley Compiler and other tools.</h2>
+      </header>
+    </div>
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <h2>The Whiley Compiler</h2>
+        <h3><a name="whiley" class="anchor" href="#whiley"><span class="octicon octicon-link"></span></a>Getting Started</h3>
+        <p>Get started with Whiley by downloading the latest version of the compiler from Github by either:</p>
+        <ul>
+          <li><a href="https://github.com/Whiley/WhileyCompiler/fork">Forking the repository on Github.</a></li>
+          <li>Downloading a <a href="https://github.com/Whiley/WhileyCompiler/tarball/master">tarball</a> or <a href="https://github.com/Whiley/WhileyCompiler/zipball/master">zipball</a> of the repository.</li>
+          <li>Cloning the repository: <code>git clone https://github.com/Whiley/WhileyCompiler.git</code></li>
+        </ul>
+        <p>The Whiley Compiler can be built via the command line using Apache Ant by running the <code>ant</code> command from the root of the project, or it can be imported into Eclipse by using the following steps:</p>
+        <ul>
+          <li>Click <strong>File</strong> -&gt; <strong>New</strong> -&gt; <strong>Java Project</strong>.</li>
+          <li>Enter the project name as &quot;WhileyCompiler&quot;.</li>
+          <li>Uncheck <strong>Use default location</strong>.</li>
+          <li>Set the <strong>location</strong> to the location of the <code>WhileyCompiler</code> project.</li>
+          <li>DO SOMETHING HERE TO SETUP THE MODULES.</li>
+          <li>Click <strong>Finish</strong>.</li>
+        </ul>
+        <h3>Directory structure</h3>
+        <p>As well as a config file and build file, the project root contains several directories:</p>
+        <ul>
+          <li><code>bin</code> contains scripts to run the Whiley Compiler and utilities.</li>
+          <li><code>examples</code> contains example Whiley programs.</li>
+          <li><code>lib</code> contains libraries used by the Whiley Compiler project.</li>
+          <li><code>misc</code> contains miscellaneous tools and scripts, such as those for Emacs and Vim.</li>
+          <li><code>modules</code> contains the source code for the various modules of the Whiley Compiler, as explained below.</li>
+          <li><code>tests</code> contains test Whiley programs to verify the compiler.</li>
+        </ul>
+        <h3>Modules</h3>
+        <p>The <code>modules</code> directory contains the source code for the following modules of the Whiley Compiler:</p>
+        <ul>
+          <li><code>wybs</code> is the SOMETHING.</li>
+          <li><code>wyc</code> is the compiler front-end, including all code for the lexer, the parser, the raw AST, and various tools for instantiating and configuring a Whiley Compiler.</li>
+          <li><code>wycc</code> is the SOMETHING.</li>
+          <li><code>wycs</code> is the SOMETHING.</li>
+          <li><code>wyil</code> is the Whiley Intermediate Language (wyil). The Whiley Compiler (wyc) converts Whiley programs into this intermediate language, and then various transforms are applied. The wyil constitutes a bytecode (similar, in some ways, to Java Bytecode) which can be interpreted and executed on its own (if desired). This package includes code for performing type checking, constant propagation, and various other manipulations. Furthermore, all the necessary code for manipulating structural types in Whiley is included here. In short, this package constitutes the bulk of the compiler.</li>
+          <li><code>wyjc</code> is the Whiley-to-Java Compiler. This extends the Whiley Compiler (wyc) with additional transforms for converting wyil code into Java bytecode.</li>
+          <li><code>wyrl</code> is the SOMETHING.</li>
+          <li><code>wyrt</code> is the Whiley Standard Library. This provides the core implementation for the standard library. All architecture specific code is omitted and, instead, is stored within the respective back-end module (e.g. wyjc).</li>
+        </ul>
+      </section>
+    </div>
+    <div id="footer_wrap" class="outer">
+      <footer class="inner">
+        <p class="copyright">Whiley maintained by <a href="https://github.com/DavePearce">David Pearce</a></p>
+        <p>Published with <a href="http://pages.github.com">GitHub Pages</a></p>
+      </footer>
+    </div>
+  </body>
+</html>
